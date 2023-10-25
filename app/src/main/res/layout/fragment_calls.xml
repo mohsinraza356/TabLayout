@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".StatusFragment">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/myCallLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="8dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageContainerCalls"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="30dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/callsHeading">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:src="@drawable/call_link" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/callsHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imageContainerCalls"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Create Call Link"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/callsSubheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imageContainerCalls"
+                app:layout_constraintTop_toBottomOf="@id/callsHeading"
+                android:text="@string/share_a_link_for_your_whatsapp_call"
+                android:textColor="#737373"
+                android:textSize="14sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/dividerCalls"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#737373"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/myCallLayout" />
+        <TextView
+            android:id="@+id/recentsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/recent"
+            android:textStyle="bold"
+            android:textColor="#878787"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dividerCalls" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

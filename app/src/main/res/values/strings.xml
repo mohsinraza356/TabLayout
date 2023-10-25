@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tab Layout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="harry_styles">Harry Styles</string>
+    <string name="hi_how_are_you">Hi How are you?</string>
+    <string name="_12_00am">12:00am</string>
+    <string name="tap_and_hold_on_a_chat_for_more_options">Tap and hold on a chat for more options</string>
+    <string name="your_personal_messages_are_end_to_end_encrypted">Your personal messages are end-to-end encrypted</string>
+    <string name="tap_to_add_status_update">Tap to add status update</string>
+    <string name="my_status">My Status</string>
+    <string name="_59_minutes_ago">59 minutes ago</string>
+    <string name="recent_updates">Recent Updates</string>
+    <string name="your_statuses_are_end_to_end_encrypted">Your statuses are end-to-end encrypted.</string>
+    <string name="share_a_link_for_your_whatsapp_call">Share a link for your Whatsapp call</string>
+    <string name="recent">Recent</string>
+</resources>
